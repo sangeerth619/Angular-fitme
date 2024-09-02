@@ -1,0 +1,13 @@
+<div class="virtual-try-on">
+    <h2>Virtual Try-On</h2>
+    <input type="file" (change)="onFileSelected($event)" accept="image/*">
+  
+    <div *ngIf="imageUrl" class="image-preview">
+      <img [src]="imageUrl" alt="User's photo for virtual try-on">
+      <div class="jewelry-overlay">
+        
+        <img src="./assets/feature1.jpg" alt="Jewelry" class="jewelry-image">
+      </div>
+    </div>
+  </div>
+  

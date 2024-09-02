@@ -1,0 +1,22 @@
+.customization-tool {
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  .option {
+    margin-bottom: 20px;
+  }
+  
+  .choices button {
+    margin: 0 5px;
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    cursor: pointer;
+  }
+  
+  .choices button.selected {
+    border-color: #000;
+    background-color: #e0e0e0;
+  }
+  

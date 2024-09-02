@@ -1,0 +1,12 @@
+.size-guide {
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  .size-guide img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+  

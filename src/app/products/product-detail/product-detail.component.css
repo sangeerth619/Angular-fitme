@@ -1,0 +1,38 @@
+/* Styles for the Product Detail component */
+.product-detail {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  
+  .product-detail img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .product-detail h2 {
+    margin: 20px 0;
+  }
+  
+  .product-detail p {
+    color: #666;
+  }
+  
+  .product-detail button {
+    padding: 10px;
+    border: none;
+    background-color: #333;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .product-detail button:hover {
+    background-color: #555;
+  }
+  

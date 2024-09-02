@@ -1,0 +1,53 @@
+<div class="login-container">
+  <div class="animated-circle"></div>
+  <div class="login-box">
+    <h2>Login</h2>
+    <form (ngSubmit)="onLogin()" #loginForm="ngForm" novalidate>
+      <div class="input-group">
+        <label for="email">Email:</label>
+        <input 
+          type="email" 
+          id="email" 
+          [(ngModel)]="email" 
+          name="email" 
+          #emailField="ngModel"
+          required 
+          email
+          class="form-control"
+        >
+        <div *ngIf="emailField.invalid && (emailField.dirty || emailField.touched)" class="error-message">
+          <span *ngIf="emailField.errors?.['required']">Email is required.</span>
+          <span *ngIf="emailField.errors?.['email']">Please enter a valid email address.</span>
+        </div>
+      </div>
+      <div class="input-group">
+        <label for="password">Password:</label>
+        <input 
+          type="password" 
+          id="password" 
+          [(ngModel)]="password" 
+          name="password" 
+          #passwordField="ngModel"
+          required 
+          minlength="6"
+          class="form-control"
+        >
+        <div *ngIf="passwordField.invalid && (passwordField.dirty || passwordField.touched)" class="error-message">
+          <span *ngIf="passwordField.errors?.['required']">Password is required.</span>
+          <span *ngIf="passwordField.errors?.['minlength']">Password must be at least 6 characters long.</span>
+        </div>
+      </div>
+      <button 
+        type="submit" 
+        [disabled]="loginForm.invalid"
+        class="btn"
+        [ngClass]="{'btn-disabled': loginForm.invalid}">
+        Login
+      </button>
+      <div *ngIf="loginForm.invalid && (emailField.dirty || emailField.touched || passwordField.dirty || passwordField.touched)" class="error-message">
+        <span *ngIf="loginForm.invalid">Please correct the errors in the form before submitting.</span>
+      </div>
+    </form>
+    <p>Don't have an account? <a routerLink="/register">Sign up here</a></p>
+  </div>
+</div>

@@ -1,0 +1,34 @@
+/* navbar.component.css */
+nav {
+  background-color: #333; /* Dark background for the navbar */
+  padding: 10px; /* Padding around the navbar */
+}
+
+nav ul {
+  list-style: none; /* Remove default list styles */
+  margin: 0;
+  padding: 0;
+  display: flex; /* Align items horizontally */
+}
+
+nav li {
+  margin-right: 20px; /* Space between menu items */
+}
+
+nav a {
+  color: #fff; /* White text color */
+  text-decoration: none; /* Remove underline from links */
+  font-weight: bold; /* Make text bold */
+  padding: 10px 15px; /* Padding inside the link */
+  display: block; /* Make link a block element to cover padding */
+}
+
+nav a:hover {
+  background-color: #575757; /* Darker background on hover */
+  border-radius: 5px; /* Rounded corners on hover */
+}
+
+nav a.active {
+  background-color: #444; /* Background for active link */
+  border-radius: 5px; /* Rounded corners for active link */
+}

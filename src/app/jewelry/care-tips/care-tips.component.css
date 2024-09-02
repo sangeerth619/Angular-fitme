@@ -1,0 +1,15 @@
+.care-tips {
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  .care-tips ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .care-tips li {
+    margin: 10px 0;
+    font-size: 1.2em;
+  }
+  

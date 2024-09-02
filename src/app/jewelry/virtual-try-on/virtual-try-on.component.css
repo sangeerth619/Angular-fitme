@@ -1,0 +1,22 @@
+.virtual-try-on {
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  .image-preview {
+    position: relative;
+    display: inline-block;
+    margin-top: 20px;
+  }
+  
+  .jewelry-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .jewelry-image {
+    width: 150px;
+  }
+  
